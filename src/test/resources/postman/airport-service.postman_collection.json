@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "1a94bb15-fc49-4c59-ba11-8743d6ef6441",
+		"name": "airport-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10360450"
+	},
+	"item": [
+		{
+			"name": "actuator",
+			"item": [
+				{
+					"name": "Get Health Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Environment Variables",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/env",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"env"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Loggers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/loggers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"loggers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Configured Beans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/beans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"beans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All API mappings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/mappings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"mappings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Available Metrics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Individual Metrics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/disk.free",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"disk.free"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Loggers - com.demo.airport to Debug",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"configuredLevel\": \"debug\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/loggers/com.demo.airport",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"loggers",
+								"com.demo.airport"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api-resource",
+			"item": [
+				{
+					"name": "Get country by name - partial search",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "user-pass2",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "app-user2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/countries-by-name?search=net",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"countries-by-name"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "net"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get countries with max number of airports - default 10",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "user-pass2",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "app-user2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/countries-with-max-airports",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"countries-with-max-airports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get countries with max number of airports - limit max records",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "user-pass2",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "app-user2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/countries-with-max-airports?maxResults=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"countries-with-max-airports"
+							],
+							"query": [
+								{
+									"key": "maxResults",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  runways by country code - search by code or name",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "user-pass1",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "app-user1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/runways-by-country?search=india",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"runways-by-country"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "india"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  runways by country name - search by code or name",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "user-pass1",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "app-user1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/runways-by-country?search=IN",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"runways-by-country"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "IN"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404 Not Found - search by code or name",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "user-pass1",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "app-user1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/runways-by-country?search=wrong",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"runways-by-country"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "wrong"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "400 Bad Request - Get country by name - partial search",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "user-pass2",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "app-user2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/countries-by-name?search=in",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"countries-by-name"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "in"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "401 Unauthorized - No Authentication",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/countries-with-max-airports",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"countries-with-max-airports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "403 Forbidden - No Authorization - Wrong Role",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "app-user1",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "user-pass1",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/countries-by-name?search=ind",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"countries-by-name"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "ind"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

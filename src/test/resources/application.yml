@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: airport-service
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: 'jdbc:h2:mem:h2db'
+    username: test
+    password: password
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: true
+cors:
+  origins: http://localhost:8080
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'

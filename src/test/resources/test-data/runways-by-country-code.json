@@ -1,0 +1,50 @@
+[
+  {
+    "id": "271044",
+    "airportRef": "46518",
+    "airportIdent": "IN-0024",
+    "lengthFt": 5500,
+    "widthFt": 100,
+    "surface": "Paved"
+  },
+  {
+    "id": "236761",
+    "airportRef": "26434",
+    "airportIdent": "VABB",
+    "lengthFt": 11312,
+    "widthFt": 197,
+    "surface": "ASP"
+  },
+  {
+    "id": "236762",
+    "airportRef": "26434",
+    "airportIdent": "VABB",
+    "lengthFt": 9419,
+    "widthFt": 148,
+    "surface": "ASP"
+  },
+  {
+    "id": "260090",
+    "airportRef": "30171",
+    "airportIdent": "VAJJ",
+    "lengthFt": 3750,
+    "widthFt": null,
+    "surface": "UNK"
+  },
+  {
+    "id": "236737",
+    "airportRef": "26455",
+    "airportIdent": "VAPO",
+    "lengthFt": 8329,
+    "widthFt": 150,
+    "surface": "ASP"
+  },
+  {
+    "id": "236738",
+    "airportRef": "26455",
+    "airportIdent": "VAPO",
+    "lengthFt": 5893,
+    "widthFt": 150,
+    "surface": "ASP"
+  }
+]

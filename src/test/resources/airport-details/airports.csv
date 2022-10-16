@@ -1,0 +1,14 @@
+id,ident,type,name,latitude_deg,longitude_deg,elevation_ft,continent,iso_country,iso_region,municipality,scheduled_service,gps_code,iata_code,local_code,home_link,wikipedia_link,keywords
+46376,IN-0021,heliport,Shikra Naval Helibase,18.913345681200003,72.8292113543,,AS,IN,IN-MM,Mumbai,no,,,,,,
+46518,IN-0024,small_airport,Baramati Airport,18.226944,74.590833,1978,AS,IN,IN-MM,Pune,yes,,,BMT,,,
+46569,IN-0046,heliport,Butcher Island Helipad,18.9623,72.9030833333,,AS,IN,IN-MM,Mumbai,no,,,,,,
+46570,IN-0047,heliport,Mahalaxmi Race Course Helipad,18.9820333333,72.8215666667,,AS,IN,IN-MM,Mumbai,no,,,,,,Bombay
+46571,IN-0048,heliport,Raj Bhavan Helipad,18.94265,72.7940166667,,AS,IN,IN-MM,Mumbai,no,,,,,,
+26434,VABB,large_airport,Chhatrapati Shivaji International Airport,19.0886993408,72.8678970337,39,AS,IN,IN-MM,Mumbai,yes,VABB,BOM,,http://www.csia.in/,https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_International_Airport,Bombay, Sahar International Airport
+30171,VAJJ,small_airport,Juhu Aerodrome,19.098100662231445,72.83419799804688,13,AS,IN,IN-MM,Mumbai,no,VAJJ,,,http://www.airportsindia.org.in/allAirports/juhu.jsp,https://en.wikipedia.org/wiki/Juhu_Aerodrome,Bombay
+26455,VAPO,medium_airport,Pune Airport,18.58209991455078,73.9197006225586,1942,AS,IN,IN-MM,Pune,yes,VAPO,PNQ,,,https://en.wikipedia.org/wiki/Pune_Airport,Lohegaon Airport, Lohegaon Air Force Station
+2513,EHAM,large_airport,Amsterdam Airport Schiphol,52.308601,4.76389,-11,EU,NL,NL-NH,Amsterdam,yes,EHAM,AMS,,http://www.schiphol.nl/,https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol,
+43207,EHHA,heliport,Amsterdam Heliport,52.4146250808,4.804801940920001,1,EU,NL,NL-NH,Amsterdam,no,EHHA,,,http://www.amsterdamheliport.com/,https://en.wikipedia.org/wiki/Amsterdam_Heliport,
+43707,NL-0012,heliport,Vu Medisch Centrum Heliport,52.33433532714844,4.8591108322143555,12,EU,NL,NL-NH,Amsterdam,no,,,,,,EH0001
+299529,NL-0042,closed,Buiksloot Airfield,52.4072222222,4.89527777778,7,EU,NL,NL-NH,Amsterdam,no,,,,,,
+332679,NL-0066,closed,Vliegveld Buiksloot,52.407222,4.895278,,EU,NL,NL-NH,Amsterdam,no,,,,,https://nl.wikipedia.org/wiki/Vliegveld_Buiksloot,

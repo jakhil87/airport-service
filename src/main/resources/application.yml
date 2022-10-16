@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: airport-service
+  profiles:
+    active: dev
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: 'jdbc:h2:mem:h2db'
+    username: test
+    password: admin
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: true
+cors:
+  origins: http://localhost:8080
+
+management:
+  endpoint:
+    health:
+      show-details: "always"
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  jpa:
+    hibernate:
+      ddl-auto: validate # production database should not be auto created.
+management:
+  endpoint:
+    health:
+      show-details: "never"
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,loggers,refresh"

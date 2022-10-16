@@ -1,0 +1,50 @@
+[
+  {
+    "id": "237924",
+    "airportRef": "2513",
+    "airportIdent": "EHAM",
+    "lengthFt": 6627,
+    "widthFt": 148,
+    "surface": "ASP"
+  },
+  {
+    "id": "237925",
+    "airportRef": "2513",
+    "airportIdent": "EHAM",
+    "lengthFt": 11283,
+    "widthFt": 148,
+    "surface": "ASP"
+  },
+  {
+    "id": "237926",
+    "airportRef": "2513",
+    "airportIdent": "EHAM",
+    "lengthFt": 11329,
+    "widthFt": 148,
+    "surface": "ASP"
+  },
+  {
+    "id": "237927",
+    "airportRef": "2513",
+    "airportIdent": "EHAM",
+    "lengthFt": 10826,
+    "widthFt": 148,
+    "surface": "ASP"
+  },
+  {
+    "id": "237929",
+    "airportRef": "2513",
+    "airportIdent": "EHAM",
+    "lengthFt": 11155,
+    "widthFt": 148,
+    "surface": "ASP"
+  },
+  {
+    "id": "237928",
+    "airportRef": "2513",
+    "airportIdent": "EHAM",
+    "lengthFt": 12467,
+    "widthFt": 198,
+    "surface": "ASP"
+  }
+]
